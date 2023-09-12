@@ -1,0 +1,656 @@
+
+
+*{
+    box-sizing : border-box; 
+    margin:0; 
+    padding : 0; 
+}
+
+
+body {
+    background-color: #eee;
+}
+nav {
+
+    display : grid ; 
+
+    grid-template-columns: 1fr 90% 1fr ;
+
+    grid-template-rows: 45px;
+    justify-content: center ;
+    
+
+    background-color: #00132b;
+   
+    align-items: center ;
+    
+
+}
+
+ul{
+    display: flex;
+    justify-content: center;  
+    background-color: red;
+    height: 90%;
+    align-items: center;
+    list-style: none ;
+    border-radius : 2px ;
+
+
+}
+
+
+
+ul li {
+  
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase; 
+    font-size : 14px ;
+    display:flex ; 
+    align-items: center;
+
+    height : 100%;
+
+    width: 100%;
+    
+    color : white; 
+
+    margin: 1%; 
+
+    z-index: 10; 
+
+
+    padding: 0 20px ; 
+
+    transition-duration: 2s ;
+
+
+    border-radius : 4px; 
+}
+
+
+ul li a {
+    text-decoration: none;
+    color : white;
+    
+    
+}
+
+ul li:hover {
+
+
+    background-color : aqua ; 
+    
+    color : black; 
+   
+
+}
+
+.ico{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : white ; 
+
+}
+
+
+
+
+
+/* the start of the banner section  */
+
+
+
+
+.banner_div { 
+
+
+    
+    background-image: url("../images/cases_01.png");
+
+    background-size : 100% 100% ;
+
+    height : 700px  ; 
+
+
+    display:grid ; 
+
+    grid-template-columns:40% 40% ;
+    grid-template-rows :50% ; 
+
+    justify-content: space-around;
+    align-content: center ; 
+    
+}
+
+
+.banner_div section  { 
+
+    display : grid ; 
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,1fr) ; 
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-left: 67px;
+
+
+
+}
+
+
+.banner_div section h1 {
+
+    margin-bottom : -11px ; 
+    font-size: 67px;
+    color : white ; 
+    font-weight:bold;
+}
+
+
+
+.div_button {
+
+    display : flex ; 
+    justify-content: start;
+
+    height: 40%;
+}
+
+ .div_button a:first-of-type {
+    margin-right : 20px ;
+}
+
+.div_button a { 
+    width: 34%;
+    height: 61%;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+
+.div_button a:last-of-type {
+
+    background-color: white;
+    color : black ; 
+}
+
+
+
+.test_01_before {
+
+    
+    display: flex;
+    position : absolute;
+    
+    width : 74px ; 
+    height : 74px ; 
+
+    border-radius : 50% ; 
+    
+    background-color : red; 
+    color : white ;
+
+    font-size : 30px; 
+
+    justify-content : center ; 
+
+    align-items: center;
+
+    left : 0; 
+    top : 30%;
+    
+    transform : translate(-38%)
+
+
+}
+
+
+
+.test_01_before a {
+
+    text-decoration : none ;
+
+    color : white ;
+}
+
+.test_01_before:hover  { 
+
+    background-color : black ; 
+
+}
+
+
+
+
+
+/* start of the main div container  */
+
+.container_all{
+    display: grid;
+    justify-content: center;
+    align-content:start ; 
+    height: 800px;
+    grid-template-columns: 90%;
+    grid-template-rows: 45% 50%;
+    width: 100%;
+
+}
+
+.container {
+
+    display : grid ; 
+    background-color : #eee ;
+    grid-template-columns: 50% 25% ;
+
+    grid-template-rows: 95%;
+    justify-content: space-between;
+    padding-left: 30px;
+    align-content: end  ;
+
+    border-radius: 10px;
+
+
+    transform: translateY(-30%);
+
+    box-shadow:  7px 7px 20px rgb(0 0 0 / 0.4);
+    
+
+
+    }
+
+
+    .container section {
+        height: 90%;
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(3,20%);
+        align-content: space-around;
+        justify-content: start;
+        padding-left: 10%;
+
+
+        
+    
+    }
+    .container section h2 {
+        font-weight: bold; 
+        color : #111111 ; 
+        font-size: 40px;
+
+        margin-top: 10px;
+        
+    }
+
+
+    .container section h2::after {
+        position : absolute ;
+        content : " " ; 
+        width: 3% ; 
+        height : 2% ; 
+        background-color : red; 
+        border-radius : 2px; 
+        margin-top: 10px;
+        top:100px ;
+        left: 110px;
+        
+    }   
+
+    .container section p {
+        font-size: 19px;
+    }
+
+    .container section button {
+
+        background-color: #111111;
+        width: 40%;
+        height: 60px;
+        margin-top: -10px;
+    }
+
+    .container section button a {
+        text-decoration: none ;
+        color : white ; 
+        font-weight : bold ;
+        text-transform: uppercase;
+    }
+
+
+
+    .container img:first-of-type {
+
+        width : 250px ; 
+        height : 250px ; 
+        
+    }
+
+    .container img:last-child { 
+
+        position : absolute;
+        width : 40px; 
+        height : 40px ; 
+        right: 24%;
+        bottom : 20%;
+    }
+
+
+
+
+
+    .after_container {
+
+
+        display : grid; 
+
+        grid-template-columns: 45% 25% ;
+        grid-template-rows: 100% ;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+    .after_container > img {
+
+        width : 90% ;
+        height :90%; 
+    }
+
+
+
+    .after_container section {
+
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(3,20%) ; 
+
+        height: 70%;
+        justify-content: start;
+        align-content: space-around;
+
+
+
+
+
+
+    }
+
+
+    .after_container h2 {
+
+        font-weight: bold ;
+        font-size: 33px ;
+
+    }
+
+    .after_container button {
+
+        width : 40% ; 
+        background-color : #111111 ; 
+        height: 75%;
+        width : 74% ;
+
+
+
+    }
+    .after_container button a {
+
+        color : white ; 
+        text-decoration : none ; 
+        font-weight : bold ; 
+        text-transform: uppercase ;
+ 
+
+    }
+
+
+
+    /* this is for the div cardes */
+
+
+    .cardes {
+
+        display: grid;
+        
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto 80%;
+        height : 600px ;
+        width: 100% ; 
+
+        justify-content: center;
+        align-items: space-around;
+        text-align: center;
+
+
+        margin-top : 80px ;
+
+
+    }
+
+    .cardes h1 {
+        font-size : 30px ; 
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+    }
+
+
+
+    .cardes .card {
+
+        border-radius : 15px ;
+
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,28%);
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-content : center ;
+        align-items: center; 
+        background-size: cover;
+        
+
+       
+       position : relative ;
+
+
+
+
+    }
+
+
+    .cardes .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/cases_02.png");
+        background-size: cover;
+        opacity: 0.8; /* Adjust the opacity to change the background image opacity */
+        z-index: -1; /* Place the pseudo-element behind the content */
+
+        border-radius: 106px; 
+
+      }
+
+
+
+
+    .cardes .card .cercle {
+
+        display: grid ;
+        grid-template-columns: 60px 60px;
+        grid-template-rows: 60px;
+        
+        justify-content: center;
+
+        position:absolute ; 
+        bottom: 0;
+        transform: translateY(50%);
+
+        left:50% ; 
+        border-radius: 50%;
+        width: 5%;
+        height : 5% ; 
+       
+    }
+
+ 
+
+    .cardes .card .cercle span {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        background-color : red; 
+
+        border-radius: 50%;
+        width : 100% ; 
+        height : 100% ;
+
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .cardes .card .cercle span:first-of-type{
+        background-color : white; 
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+    .cardes .card > div {
+
+        display: grid;
+        grid-template-columns: 90% ;
+         grid-template-rows: 85% 13%;
+
+        justify-content: center;
+        justify-items:center;
+        align-items: center;
+        align-content: space-evenly;
+
+
+        
+    
+        height: 64%;
+    }
+
+
+    .cardes .card div div {
+
+        display: grid;
+        grid-template-columns: 70%;
+        grid-template-rows: 23% 13% auto;
+        justify-content: center;
+        align-content: center;
+
+        height: 90%;
+        border: 1px solid black;
+
+        background-color: #fef6fc ;
+        border-radius : 10px ; 
+
+
+    }
+
+
+
+    .cardes .card div div div {
+        text-align: center;
+        display: flex;
+        justify-content: center ;
+        border : transparent ; 
+
+        margin-top : 3%; 
+    }
+
+    .cardes .card div div div img {
+        width: 40px;
+        height: 40px;
+
+
+    }
+
+
+    .cardes .card div button  {
+
+        width: 50%;
+        height: 100%;
+        background-color: #05254d;
+        text-align: center;
+        border-radius: 4px;
+        font-weight : bold ;
+        padding-top: 4px;
+    
+
+    }
+
+
+    .cardes .card div button a {
+        text-decoration: none;
+        color:white ; 
+        text-transform: uppercase;
+
+    }
+
+
+    .cardes .card .two button {
+        background-color: #ed1c24;
+    }
+
+
+
+
+    /* before_casses  */
+
+
+
+
+    .before_cases {
+
+        display:grid; 
+        text-align: center;
+        grid-template-columns: 70%;
+
+        margin-top:40px;
+        position: relative;
+
+        
+    }
+
+    .before_cases h1 {
+        font-size: 30px ;
+        font-family: 'Rubik', sans-serif;
+        text-transform: uppercase;
+
+    }
+
+    .before_cases p {
+        font-family: 'Rubik', sans-serif;
+
+
+    }
