@@ -446,6 +446,7 @@ ul li:hover {
         font-weight: bold;
         text-transform: uppercase;
         font-family: 'Rubik', sans-serif;
+        word-spacing: 12px;
     }
 
 
