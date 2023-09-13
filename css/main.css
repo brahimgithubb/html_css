@@ -579,6 +579,10 @@ ul li:hover {
     }
 
 
+    .cardes .card div div h3 {
+        word-spacing: 3px;
+    }
+
 
     .cardes .card div div div {
         text-align: center;
@@ -629,3 +633,49 @@ ul li:hover {
     /* before_casses  */
 
 
+
+
+
+    /* testing h1 wow with animation  */
+
+
+
+    
+
+
+    span.wow {
+      
+        animation-name: wow_ani;
+        animation-duration: 1s;
+        animation-iteration-count:infinite;
+        animation-direction:normal;
+        animation-timing-function: linear;
+      
+        
+    }
+    @keyframes wow_ani {
+
+        0% {
+            text-shadow: 0 0 0px #ff7900;
+            color : orange ; 
+
+        }
+
+        25% {
+            text-shadow: 0 0 3px #ff7900; 
+            color : orange ; 
+            
+        }
+
+
+        50% {
+            text-shadow: 0 0 3px #ff7900; 
+            color : orange ; 
+            
+        }
+        100% {
+            text-shadow: 0 0 0px #ff7900;
+            color : orange ; 
+            
+        }
+    }
