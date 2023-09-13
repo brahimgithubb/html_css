@@ -647,9 +647,10 @@ ul li:hover {
       
         animation-name: wow_ani;
         animation-duration: 1s;
-        animation-iteration-count:infinite;
+        animation-iteration-count:3;
         animation-direction:normal;
         animation-timing-function: linear;
+        color : #ff7900 ;
       
         
     }
